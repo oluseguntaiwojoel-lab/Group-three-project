@@ -4,132 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foody</title>
-
     <!-- css linking  -->
      <link rel="stylesheet" href="style.css">
-
      <!-- google font  -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-
-
     <!-- Header section  -->
-
     <header class="head">
-
         <!-- navbar  -->
-
         <nav class="navbar">
             <div class="logo">
-                <h3>F<span>oo</span>dy</h3>
+                <a href="index.html" style="text-decoration:none;"><h3>F<span>oo</span>dy</h3></a>
             </div>
             <div class="nav-link" id="navMenu">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#"><select name="pages" id="pages">
-                        <option value="pages">Pages</option>
-                        <option value="blog">Blog</option>
-                        <option value="our-firm">Our Firm</option>
-                    </select></a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Pages <i class="fa-solid fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="blog.html">Blog</a>
+                            <a href="our-farm.html">Our Farm</a>
+                        </div>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
                     <div class="icon">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <i class="fa-solid fa-user"></i>
-                        <i class="fa-solid fa-bag-shopping"></i>
+                        <a href="#" style="color:black;"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="profile.html" style="color:black;"><i class="fa-solid fa-user"></i></a>
+                        <a href="cart.html" style="color:black;"><i class="fa-solid fa-bag-shopping"></i></a>
                     </div>
                 </ul>
             </div>
-           
                 <div class="bar-togle" id="navToggle">
                 <i class="fa-solid fa-bars"></i>
                 </div>
         </nav>
-        
         <!-- Hero Section  -->
-
          <div class="hero-section">
             <div class="hero">
                 <h1>Natural Food is Always Healthy</h1>
                 <div class="hero-btn">
-                    <button class="green-btn">Products</button>
-                    <button class="orange-btn">Services</button>
+                    <button class="green-btn" onclick="location.href='products.html'">Products</button>
+                    <button class="orange-btn" onclick="location.href='contact.html'">Services</button>
                 </div>
             </div>
-            <!-- <div class="hero-img"> -->
-                <!-- <img src="images/basket.png" alt="food basket"> -->
-            <!-- </div> -->
-
          </div>
-        
     </header>
-
     <!-- main section  -->
-
     <div class="main-section">
         <div class="main-img">
             <img src="images/man.jpeg" alt="farmer">
         </div>
-
         <div class="main">
             <h2>Best Organic Fruits and Vegetables</h2>
             <p>
-                You can get Best Organic Fruits and Vegetables here Lorem ipsum, dolor sit amet consectetur adipisi spernatur ea unde ipsum .   
+                Experience the finest selection of organic fruits and vegetables cultivated with care to promote sustainable farming and family health.   
             </p>
-
             <ul>
                 <li><i class="fa-solid fa-check"></i>Best Organic Fruits and Vegetables.</li>
                 <li><i class="fa-solid fa-check"></i>Best Organic Fruits and Vegetables.</li>
                 <li><i class="fa-solid fa-check"></i>Best Organic Fruits and Vegetables.</li>
             </ul>
-
-            <button class="main-btn">Read More</button>
+            <button class="main-btn" onclick="location.href='about.html'">Read More</button>
         </div>
-
     </div>
-
     <!-- FEATURES -->
     <div class="features">
          <div class="green-line"></div>
          <div class="red-line"></div>
         <h2>Our Features</h2>
         <p class="subtitle">
-            Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. ipsum diam justo sed rebum vero dolor duo.
+            We prioritize sustainable agriculture, ensuring that our produce respects the environment and nourishes your body naturally.
         </p>
-
         <div class="feature-container">
-
             <div class="card">
                 <div class="icon"><img src="./images/1.png" alt=""></div>
                 <h3>Natural Process</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error corporis vitae porro, repellendus nemo veniam?</p>
-                <button>Read More</button>
+                <p>We rely strictly on eco-friendly, chemical-free methods to maintain the soil's vitality and yield nutrient-dense crops.</p>
+                <button onclick="location.href='about.html'">Read More</button>
             </div>
-
             <div class="card">
                 <div class="icon"><img src="./images/2.png" alt=""></div>
                 <h3>Organic Products</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde ipsum aspernatur distinctio. Accusantium, inventore numquam!</p>
-                <button>Read More</button>
+                <p>All of our goods are 100% certified organic, harvested freshly and delivered straight from the farm to your doorstep.</p>
+                <button onclick="location.href='about.html'">Read More</button>
             </div>
-
             <div class="card">
                 <div class="icon"><img src="./images/3.png" alt=""></div>
                 <h3>Biologically Safe</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut facilis qui aperiam, voluptatibus corporis sint.</p>
-                <button>Read More</button>
+                <p>We enforce strict biological safety standards, protecting the local ecosystem while guaranteeing your family's wellbeing.</p>
+                <button onclick="location.href='about.html'">Read More</button>
             </div>
-
         </div>
     </div>
-
     <!-- Our Product  -->
     <div class="products">
         <div class="our-product">
@@ -138,10 +111,10 @@
                 <div class="line-one"></div>
                 <h2>Our Product</h2>
                 <p>
-                    We give the best ipsum, dolor sit amet elit. Quo tempore consequuntur laboriosam,am quidem quas.
+                    Browse our premium selection of daily fresh picks. We ensure the highest standard of quality for a healthier lifestyle.
                 </p>
            </div>
-            <div class="fliters">
+            <div class="filters">
                 <button class="active">Vegetable</button>
                 <button>Fruits</button>
                 <button>Fresh</button>
@@ -164,7 +137,6 @@
                     <button><i class="fa-solid fa-bag-shopping"></i>Add to cart</button>
                 </div>
             </div>
-
             <div class="card">
                 <span class="badge"> New</span>
                 <img src="images/pineapple.jpg" alt="">
@@ -180,7 +152,6 @@
                     <button><i class="fa-solid fa-bag-shopping"></i>Add to cart</button>
                 </div>
             </div>
-
             <div class="card">
                 <span class="badge">New</span>
                 <img src="images/pepper.png" alt="">
@@ -196,8 +167,6 @@
                     <button><i class="fa-solid fa-bag-shopping"></i>Add to cart</button>
                 </div>
             </div>
-
-
             <div class="card">
                 <span class="badge">New</span>
                 <img src="images/Strawberries.png" alt="">
@@ -207,14 +176,12 @@
                         $25.00 <span>$35.00</span>
                     </p>
                 </div>
-               
                 <div class="actions">
                     <a href=""><i class="fa-solid fa-eye"></i>View detail</a>
                     <div class="line"></div>
                     <button><i class="fa-solid fa-bag-shopping"></i>Add to cart</button>
                 </div>
             </div>
-
             <div class="card">
                 <span class="badge">New</span>
                 <img src="images/fresh-cucumber.jpg" alt="">
@@ -224,15 +191,12 @@
                         $30.00 <span>$39.00</span>
                     </p>
                 </div>
-                
-               
                 <div class="actions">
                     <a href=""><i class="fa-solid fa-eye"></i>View detail</a>
                     <div class="line"></div>
                     <button><i class="fa-solid fa-bag-shopping"></i>Add to cart</button>
                 </div>
             </div>
-
             <div class="card">
                 <span class="badge">New</span>
                 <img src="images/tomatoes-removebg-preview.png" alt="">
@@ -242,14 +206,12 @@
                         $35.00 <span>$45.00</span>
                     </p>
                 </div>
-                
                 <div class="actions">
                     <a href=""><i class="fa-solid fa-eye"></i>View detail</a>
                     <div class="line"></div>
                     <button><i class="fa-solid fa-bag-shopping"></i>Add to cart</button>
                 </div>
             </div>
-
             <div class="card">
                 <span class="badge">New</span>
                 <img src="images/download-removebg-preview.png" alt="">
@@ -265,7 +227,6 @@
                     <button><i class="fa-solid fa-bag-shopping"></i>Add to cart</button>
                 </div>
             </div>
-
             <div class="card">
                 <span class="badge">New</span>
                 <img src="images/plabtain.webp" alt="">
@@ -282,40 +243,34 @@
                 </div>
             </div>
          </div>
-
          <div class="button">
-            <button>Browse More Products</button>
+            <button onclick="location.href='products.html'">Browse More Products</button>
          </div>
     </div>
-
     <div class="visit-our-farm">
         <div class="visit">
-            <h2>Visit Our Firm</h2>
+            <h2>Visit Our Farm</h2>
             <p>
-                We have other products.To know more about our firm Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime molestiae quis ad aliquid? Cum cumque minima culpa id nobis repudiandae? Blanditiis temporibus ullam eius animi, omnis consectetur nihil provident deleniti!
+                We offer a diverse selection of seasonal vegetables and fruits. Visit our farm to witness our eco-friendly harvesting methods and discover the true taste of biological, pesticide-free agriculture!
             </p>
         </div>
         <div class="visit-button">
-            <button type="button">Visit Now</button>
+            <button type="button" onclick="location.href='about.html'">Visit Now</button>
         </div>
     </div>
-
     <!--Customer Review -->
     <div class="reviews">
             <div class="green-line"></div>
             <div class="red-line"></div>
         <h2>Customer Review</h2>
         <p class="subtitle">
-            Tempor ut dolore lorem kasd vero ipsum sit eirmod sit.
+            Hear from our community of organic lovers and healthy eaters who value the freshness of our daily harvest.
         </p>
-
             <div class="review-container">
-
                 <!-- Card 1 -->
                 <div class="review-card">
                     <div class="quote"><i class="fa-solid fa-quote-left"></i></div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam reiciendis sunt adipisci!</p>
-
+                    <p>"The freshness of their produce is unmatched. Knowing that my family is eating pesticide-free, biological food makes all the difference."</p>
                     <div class="client">
                         <img src="images/Francis.jpeg" alt="">
                         <div>
@@ -324,12 +279,10 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Card 2 (Active one) -->
                 <div class="review-card active">
                     <div class="quote"><span><i class="fa-solid fa-quote-left"></i></span></i></div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic delectus soluta molestiae.</p>
-
+                    <p>"Since I started buying from Foody, I've noticed a massive improvement in flavor and quality. I love supporting their sustainable mission."</p>
                     <div class="client">
                         <img src="images/ilekys.jpeg" alt="">
                         <div>
@@ -338,12 +291,10 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Card 3 -->
                 <div class="review-card">
                     <div class="quote"><i class="fa-solid fa-quote-left"></i></div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam reiciendis sunt adipisci!</p>
-
+                    <p>"The freshness of their produce is unmatched. Knowing that my family is eating pesticide-free, biological food makes all the difference."</p>
                     <div class="client">
                         <img src="images/Timi.jpeg" alt="">
                         <div>
@@ -352,31 +303,26 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
             <!-- Buttons -->
             <div class="customer-button">
                 <button><i class="fa-solid fa-less-than"></i></button>
                 <button><i class="fa-solid fa-greater-than"></i></button>
             </div>
     </div>
-
-
    <!-- Latest Blog  -->
     <div class="blog-section">
                 <div class="header-container">
                     <div class="green-line"></div>
                     <div class="red-line"></div>
                     <h1>Latest Blog</h1>
-                    <p>Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum<br>diam justo sed rebum vero dolor duo.</p>
+                    <p>Experience the vibrant flavors and nutritional benefits of produce grown without harmful synthetics.<br>Our natural process ensures premium quality every time.</p>
                 </div>
-
             <div class="blog-grid">
                     <div class="blog-card">
                         <img src="images/blog-1.jpg" alt="">
                         <div class="card-content">
-                            <h3>How to cultivate organic fruits and vegetables in own firm</h3>
+                            <h3>How to cultivate organic fruits and vegetables in own farm</h3>
                             <div class="meta">
                                 <span><i class="fas fa-user"></i> Admin</span>
                                 <span><i class="fas fa-calendar-alt"></i> 01 Jan, 2045</span>
@@ -386,7 +332,7 @@
                     <div class="blog-card">
                         <img src="images/blog-2.jpg" alt="">
                         <div class="card-content">
-                            <h3>How to cultivate organic fruits and vegetables in own firm</h3>
+                            <h3>How to cultivate organic fruits and vegetables in own farm</h3>
                             <div class="meta">
                                 <span><i class="fas fa-user"></i> Admin</span>
                                 <span><i class="fas fa-calendar-alt"></i> 01 Jan, 2045</span>
@@ -396,7 +342,7 @@
                     <div class="blog-card">
                         <img src="images/blog-3.jpg" alt="">
                         <div class="card-content">
-                            <h3>How to cultivate organic fruits and vegetables in own firm</h3>
+                            <h3>How to cultivate organic fruits and vegetables in own farm</h3>
                             <div class="meta">
                                 <span><i class="fas fa-user"></i> Admin</span>
                                 <span><i class="fas fa-calendar-alt"></i> 01 Jan, 2045</span>
@@ -405,14 +351,12 @@
                     </div>
             </div>
         </div>
-
         <!-- Footer Section  -->
     <footer class="main-footer">
             <div class="footer-container">
                 <div class="footer-col brand">
                     <h2 class="footer-logo">F<span>oo</span>dy</h2>
-                    <p>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
-                        lorem sit clita</p>
+                    <p>Committed to providing communities with the freshest, most sustainable, and high-quality organic goods from farm to table.</p>
                     <div class="social-icons">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -420,14 +364,12 @@
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-
                 <div class="footer-col">
                     <h3>Address</h3>
                     <p><i class="fas fa-map-marker-alt"></i> 123 Street, New York, USA</p>
                     <p><i class="fas fa-phone-alt"></i> +012 345 67890</p>
                     <p><i class="fas fa-envelope"></i> info@example.com</p>
                 </div>
-
                 <div class="footer-col">
                     <h3>Quick Links</h3>
                     <ul>
@@ -438,29 +380,24 @@
                         <li><a href="#">Support</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-col">
                     <h3>Newsletter</h3>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <p>Subscribe to receive organic farming updates, healthy recipes, and seasonal offers directly to your inbox!</p>
                     <div class="newsletter-box">
                         <input name="email" type="email" placeholder="Your email">
                         <button>SignUp</button>
                     </div>
                 </div>
             </div>
-
             <div class="footer-bottom">
                 <p>&copy; <strong>Your Site Name</strong>, All Right Reserved.</p>
                 <p>Designed By <span>HTML Codex</span><br>Distributed By: <span>ThemeWagon</span></p>
             </div>
     </footer>
-
     <div class="top">
         <a href="#" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
     </div>
-
     <script>
-        
     </script>
    <script src="./script.js"></script>
 </body>
