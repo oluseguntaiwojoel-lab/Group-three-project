@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foody - Cart</title>
+    <!-- css linking  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html" style="text-decoration:none;"><h3>F<span>oo</span>dy</h3></a>
+            </div>
+            <div class="nav-link" id="navMenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Pages <i class="fa-solid fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="blog.html">Blog</a>
+                            <a href="our-farm.html">Our Farm</a>
+                        </div>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <div class="icon">
+                        <a href="#" style="color:black;"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="profile.html" style="color:black;"><i class="fa-solid fa-user"></i></a>
+                        <a href="cart.html" style="color:green;"><i class="fa-solid fa-bag-shopping"></i></a>
+                    </div>
+                </ul>
+            </div>
+            <div class="bar-togle" id="navToggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+        <div class="page-header">
+            <div>
+                <h1>Your <span>Cart</span></h1>
+                <p>Review and checkout your organic items.</p>
+            </div>
+        </div>
+    </header>
+    <div class="cart-container">
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="images/tomatoes-removebg-preview.png" alt="Tomato">
+                        Fresh Tomato
+                    </td>
+                    <td>$19.00</td>
+                    <td><input type="number" value="1" min="1" class="cart-qty"></td>
+                    <td>$19.00</td>
+                    <td><a href="#" style="color:red;"><i class="fa-solid fa-trash"></i></a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/pineapple.jpg" alt="Pineapple">
+                        Fresh Pineapple
+                    </td>
+                    <td>$20.00</td>
+                    <td><input type="number" value="2" min="1" class="cart-qty"></td>
+                    <td>$40.00</td>
+                    <td><a href="#" style="color:red;"><i class="fa-solid fa-trash"></i></a></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="cart-total">Total: $59.00</div>
+        <button class="checkout-btn" onclick="alert('Proceeding to Checkout! (Demo)')">Proceed to Checkout</button>
+        <div style="clear: both;"></div>
+    </div>
+    <!-- Footer Section  -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col brand">
+                <h2 class="footer-logo">F<span>oo</span>dy</h2>
+                <p>Committed to providing communities with the freshest, most sustainable, and high-quality organic goods from farm to table.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Address</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Street, New York, USA</p>
+                <p><i class="fas fa-phone-alt"></i> +012 345 67890</p>
+                <p><i class="fas fa-envelope"></i> info@example.com</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Terms & Condition</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p>Subscribe to receive organic farming updates, healthy recipes, and seasonal offers directly to your inbox!</p>
+                <div class="newsletter-box">
+                    <input name="email" type="email" placeholder="Your email">
+                    <button>SignUp</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <strong>Foody</strong>, All Right Reserved.</p>
+        </div>
+    </footer>
+    <div class="top">
+        <a href="#" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+   <script src="./script.js"></script>
+</body>
+</html>
