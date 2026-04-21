@@ -757,16 +757,33 @@ button:hover {
         /* flex-wrap: wrap; */
         padding: 10px 8px;
     }
+    header{
+        background-position: center;
+        /* background-size: contain; */
+    }
+    .hero-section .hero {
+        width: 100%;
+        font-size: 24px;
+        height: auto;
+        /* color: red; */
+    }
+    .hero-section .hero h1{
+        font-size: 2.5rem
+    }
     .button{
         margin-top: 20px;
     }
     .main-section{
         flex-direction: column;
     }
+    .social-icons{
+        width: 100%;
+    }
 }
 @media(max-width: 768px){
     header{
         background-position: center;
+        width: 100%;
     }
     .nav-link{
         display: none;
@@ -782,6 +799,11 @@ button:hover {
     }
     .main-section .main{
         margin-left: 0px;
+    }
+    .main h2 {
+        width: 100%;
+        font-size: 30px;
+        margin-bottom: 20px;
     }
 
         
@@ -851,6 +873,16 @@ button:hover {
     }
 }
 @media(max-width: 575px){
+    .main{
+        width: 100%;
+        padding: 0px 0px;
+    }
+    .main h2 {
+        width: 100%;
+        padding: 0px 0px;
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
     .grid{
         display: flex;
         flex-direction: column;
@@ -865,7 +897,8 @@ button:hover {
         /* color: red; */
     }
 }
-@media(max-width: 325px){
+ 
+@media(max-width: 375px){
     body{
         width: 100%;
     }
@@ -877,6 +910,26 @@ button:hover {
         font-size: 14px;
         height: auto;
         /* color: red; */
+    }
+    .main-section{
+        padding: 30px 20px;
+        margin: 0px auto;
+    }
+    .main h2 {
+        width: 100%;
+        padding: 0px 0px;
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+    .main-img img{
+        width: 300px;
+    }
+    .main p {
+        width: 100%;
+        padding: 0px 0px;
+        font-size: 12px;
+        margin-bottom: 20px;
     }
     .grid{
         display: flex;
@@ -895,3 +948,11 @@ button:hover {
         padding: 0px;
     }
 }
+@media(max-width: 395px){
+    
+    .main p {
+        width: 100%;
+        padding: 0px 0px;
+        font-size: 12px;
+    }
+}  
